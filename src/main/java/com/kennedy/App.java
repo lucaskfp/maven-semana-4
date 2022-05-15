@@ -1,13 +1,9 @@
 package com.kennedy;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import com.kennedy.service.Menu;
+
+public class App {
+    public static void main(String[] args) {
+        Menu.start();
     }
 }
