@@ -3,6 +3,7 @@ package com.kennedy.model;
 public class Product {
     private String name;
     private Double price;
+    private Integer amount;
 
     public Product(String name, Double price) {
         this.name = name;
@@ -26,6 +27,14 @@ public class Product {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Integer getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Integer amount) {
+        this.amount = amount;
     }
 
     @Override
