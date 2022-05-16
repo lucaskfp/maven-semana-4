@@ -5,9 +5,10 @@ public class Product {
     private Double price;
     private Integer amount;
 
-    public Product(String name, Double price) {
+    public Product(String name, Double price, Integer amount) {
         this.name = name;
         this.price = price;
+        this.amount = amount;
     }
 
     public Product() {
@@ -39,7 +40,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product [name=" + name + ", price=" + price + "]";
+        return "Product [amount=" + amount + ", name=" + name + ", price=" + price + "]";
     }
 
 }

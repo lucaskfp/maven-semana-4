@@ -18,7 +18,7 @@ public class ProductService {
             System.out.println("-----------------------------------------");
             for (Product p : list) {
                 System.out.println(p);
-                total += p.getPrice();
+                total += p.getPrice() * p.getAmount();
             }
             System.out.println("-----------------------------------------");
             System.out.println("||=> TOTAL = " + total);
@@ -42,7 +42,10 @@ public class ProductService {
                 System.out.println("||=> Digite o preço do produto " + i);
                 Double price = input.nextDouble();
 
-                dbProducts.add(new Product(name, price));
+                System.out.println("||=> Digite a quantidade do produto " + i);
+                Integer amount = input.nextInt();
+
+                dbProducts.add(new Product(name, price, amount));
                 i++;
             }
 
